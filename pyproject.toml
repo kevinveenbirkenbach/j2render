@@ -1,0 +1,21 @@
+[project]
+name = "j2render"
+version = "0.1.0"
+description = "Minimal CLI tool to render Jinja2 templates into output files"
+authors = [
+    { name = "Kevin Veen-Birkenbach", email = "contact@veen.world" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["jinja2", "cli", "template", "yaml", "ansible"]
+dependencies = [
+    "jinja2>=3.0"
+]
+
+[project.scripts]
+j2r = "main:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
